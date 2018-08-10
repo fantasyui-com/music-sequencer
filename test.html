@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- ADD THIS -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0/webcomponents-bundle.js"></script>
+    <script src="https://unpkg.com/tone"></script>
+
+    <script type="module" src="music-sequencer.js"></script>
+
+  </head>
+
+  <body>
+
+    <music-sequencer id="sequencer-1" rows="12" cols="16" size="16px"/>
+
+    <script>
+
+    const sequencer1 = document.getElementById("sequencer-1");
+
+    sequencer1.addEventListener('change', function (e) {
+      console.log('music-sequencer change event', e)
+      console.log('music-sequencer change event matrix', e.detail)
+    }, false);
+
+    </script>
+
+
+
+  </body>
+</html>
