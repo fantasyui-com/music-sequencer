@@ -1,6 +1,6 @@
 {
   "name": "music-sequencer",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "music-sequencer web component",
   "main": "index.js",
   "scripts": {
