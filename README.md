@@ -7,7 +7,7 @@ music-sequencer web component
 
 <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0/webcomponents-bundle.js"></script>
 <script type="module" src="https://unpkg.com/music-sequencer/index.js"></script>
-<music-sequencer id="sequencer-1" rows="12" cols="16" size="16px"/>
+<music-sequencer id="sequencer-1" rows="12" cols="16" size="16"/>
 
 
 ```
